@@ -1,7 +1,7 @@
 {
   "configVersion": 1,
-  "timestamp": 1768321867300,
-  "index": "/index.html",
+  "timestamp": 1768322101422,
+  "index": "/bingo/index.html",
   "assetGroups": [
     {
       "name": "app",
@@ -11,13 +11,13 @@
         "ignoreVary": true
       },
       "urls": [
-        "/favicon.ico",
-        "/index.html",
-        "/main.ffc45eb90a78d454.js",
-        "/manifest.webmanifest",
-        "/polyfills.e97199c05341c735.js",
-        "/runtime.3ac17b6bd83b5941.js",
-        "/styles.ef46db3751d8e999.css"
+        "/bingo/favicon.ico",
+        "/bingo/index.html",
+        "/bingo/main.ffc45eb90a78d454.js",
+        "/bingo/manifest.webmanifest",
+        "/bingo/polyfills.e97199c05341c735.js",
+        "/bingo/runtime.3ac17b6bd83b5941.js",
+        "/bingo/styles.ef46db3751d8e999.css"
       ],
       "patterns": []
     },
@@ -29,35 +29,35 @@
         "ignoreVary": true
       },
       "urls": [
-        "/assets/icons/icon-128x128.png",
-        "/assets/icons/icon-144x144.png",
-        "/assets/icons/icon-152x152.png",
-        "/assets/icons/icon-192x192.png",
-        "/assets/icons/icon-384x384.png",
-        "/assets/icons/icon-512x512.png",
-        "/assets/icons/icon-72x72.png",
-        "/assets/icons/icon-96x96.png"
+        "/bingo/assets/icons/icon-128x128.png",
+        "/bingo/assets/icons/icon-144x144.png",
+        "/bingo/assets/icons/icon-152x152.png",
+        "/bingo/assets/icons/icon-192x192.png",
+        "/bingo/assets/icons/icon-384x384.png",
+        "/bingo/assets/icons/icon-512x512.png",
+        "/bingo/assets/icons/icon-72x72.png",
+        "/bingo/assets/icons/icon-96x96.png"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
-    "/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
-    "/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
-    "/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
-    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
-    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
-    "/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
-    "/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
-    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "540ca6164cc0150c5086e10ec0a74d8e3861b715",
-    "/main.ffc45eb90a78d454.js": "c4a2b0add7d6ea0b97842b7ab54452432eeb6f04",
-    "/manifest.webmanifest": "ccd736136bee6b35c4ebe9b5f51ee1cb91f9606a",
-    "/polyfills.e97199c05341c735.js": "559e4ef3a3dbf589603df44cc718930751b4f5b4",
-    "/runtime.3ac17b6bd83b5941.js": "f943841cff0e2e0190a68ce2b9a810340c29f076",
-    "/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    "/bingo/assets/icons/icon-128x128.png": "b1f06c7d714abb4a0cc4d1f7c954feb26826e4c4",
+    "/bingo/assets/icons/icon-144x144.png": "96a0d629765c1bc85d9263c6bc83094ca776d267",
+    "/bingo/assets/icons/icon-152x152.png": "b1fbbee3902eb96a7658e3bb006f31f78ca5a44c",
+    "/bingo/assets/icons/icon-192x192.png": "e4211163bf0911688fbfb80278d8ff4d2f77691d",
+    "/bingo/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/bingo/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/bingo/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
+    "/bingo/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
+    "/bingo/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/bingo/index.html": "862fcd5a18edd4a7b0efad0b379f5b1650bd9e3e",
+    "/bingo/main.ffc45eb90a78d454.js": "c4a2b0add7d6ea0b97842b7ab54452432eeb6f04",
+    "/bingo/manifest.webmanifest": "ccd736136bee6b35c4ebe9b5f51ee1cb91f9606a",
+    "/bingo/polyfills.e97199c05341c735.js": "559e4ef3a3dbf589603df44cc718930751b4f5b4",
+    "/bingo/runtime.3ac17b6bd83b5941.js": "f943841cff0e2e0190a68ce2b9a810340c29f076",
+    "/bingo/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
     {
