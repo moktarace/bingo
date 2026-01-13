@@ -1,4 +1,8 @@
 <div class="app-container">
+  <div class="confetti-container" *ngIf="showConfetti">
+    <div class="confetti" *ngFor="let i of [].constructor(50); let idx = index" [style.left.%]="(idx * 7) % 100" [style.animation-delay.s]="idx * 0.05"></div>
+  </div>
+  
   <header class="app-header">
     <h1>{{ title }}</h1>
   </header>
@@ -21,9 +25,6 @@
       </div>
       
       <div *ngIf="!isGameFinished && !isGameNotStarted">
-        <p *ngIf="!alreadyScratched" class="scratch-instruction">
-          ✨ Grattez avec votre souris ou votre doigt pour révéler le numéro du jour !
-        </p>
         <app-scratch-card
           [number]="todayNumber!"
           [alreadyScratched]="alreadyScratched"

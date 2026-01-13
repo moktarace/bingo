@@ -30,19 +30,38 @@ export class ScratchCardComponent implements OnInit, AfterViewInit {
     this.ctx = canvas.getContext('2d')!;
     
     // Définir la taille du canvas
-    canvas.width = 300;
-    canvas.height = 200;
+    canvas.width = 350;
+    canvas.height = 250;
 
-    // Remplir avec une couche grise à gratter
-    this.ctx.fillStyle = '#cccccc';
+    // Créer un effet de ticket à gratter réaliste
+    // Fond argenté avec texture
+    const gradient = this.ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+    gradient.addColorStop(0, '#c0c0c0');
+    gradient.addColorStop(0.5, '#e8e8e8');
+    gradient.addColorStop(1, '#a8a8a8');
+    this.ctx.fillStyle = gradient;
     this.ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-    // Ajouter un motif de grattage
-    this.ctx.fillStyle = '#999999';
-    this.ctx.font = 'bold 20px Arial';
+    // Ajouter une texture granuleuse
+    for (let i = 0; i < 3000; i++) {
+      const x = Math.random() * canvas.width;
+      const y = Math.random() * canvas.height;
+      const opacity = Math.random() * 0.3;
+      this.ctx.fillStyle = `rgba(${Math.random() > 0.5 ? 255 : 0}, ${Math.random() > 0.5 ? 255 : 0}, ${Math.random() > 0.5 ? 255 : 0}, ${opacity})`;
+      this.ctx.fillRect(x, y, 1, 1);
+    }
+
+    // Texte principal
+    this.ctx.fillStyle = '#888888';
+    this.ctx.font = 'bold 28px Arial';
     this.ctx.textAlign = 'center';
     this.ctx.textBaseline = 'middle';
     this.ctx.fillText('GRATTEZ ICI', canvas.width / 2, canvas.height / 2);
+
+    // Sous-texte
+    this.ctx.font = '16px Arial';
+    this.ctx.fillStyle = '#999999';
+    this.ctx.fillText('Pour révéler le numéro', canvas.width / 2, canvas.height / 2 + 35);
 
     // Configurer le mode de dessin pour effacer
     this.ctx.globalCompositeOperation = 'destination-out';
@@ -89,7 +108,7 @@ export class ScratchCardComponent implements OnInit, AfterViewInit {
 
   private scratch(x: number, y: number): void {
     this.ctx.beginPath();
-    this.ctx.arc(x, y, 20, 0, 2 * Math.PI);
+    this.ctx.arc(x, y, 25, 0, 2 * Math.PI);
     this.ctx.fill();
   }
 

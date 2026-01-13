@@ -6,11 +6,14 @@
 
   .card-container {
     position: relative;
-    width: 300px;
-    height: 200px;
-    border-radius: 15px;
+    width: 350px;
+    height: 250px;
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3),
+                0 5px 15px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff;
+    background: #fff;
 
     .number-display {
       position: absolute;
@@ -19,22 +22,57 @@
       width: 100%;
       height: 100%;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 80px;
+      font-size: 100px;
       font-weight: bold;
       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
       color: white;
       z-index: 1;
+      text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+
+      &::before {
+        content: 'BINGO';
+        position: absolute;
+        top: 20px;
+        font-size: 24px;
+        font-weight: 900;
+        letter-spacing: 8px;
+        opacity: 0.3;
+      }
+
+      &::after {
+        content: '★ ★ ★';
+        position: absolute;
+        bottom: 20px;
+        font-size: 20px;
+        opacity: 0.3;
+      }
     }
 
     .scratch-canvas {
       position: absolute;
       top: 0;
       left: 0;
-      cursor: pointer;
+      cursor: grab;
       z-index: 2;
       touch-action: none;
+
+      &:active {
+        cursor: grabbing;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .scratch-card .card-container {
+    width: 300px;
+    height: 200px;
+
+    .number-display {
+      font-size: 80px;
     }
   }
 }

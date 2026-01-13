@@ -13,6 +13,7 @@ export class AppComponent implements OnInit {
   history: BingoDay[] = [];
   isGameFinished: boolean = false;
   isGameNotStarted: boolean = false;
+  showConfetti: boolean = false;
 
   constructor(private bingoService: BingoService) {}
 
@@ -32,5 +33,11 @@ export class AppComponent implements OnInit {
   onScratched(): void {
     this.bingoService.markAsScratched();
     this.alreadyScratched = true;
+    this.showConfetti = true;
+    
+    // Arrêter les confettis après 4 secondes
+    setTimeout(() => {
+      this.showConfetti = false;
+    }, 4000);
   }
 }
