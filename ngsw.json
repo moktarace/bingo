@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1768317873139,
+  "timestamp": 1768318142264,
   "index": "/bingo/index.html",
   "assetGroups": [
     {
@@ -13,10 +13,10 @@
       "urls": [
         "/bingo/favicon.ico",
         "/bingo/index.html",
-        "/bingo/main.eac5ed3b96d28273.js",
+        "/bingo/main.ffc45eb90a78d454.js",
         "/bingo/manifest.webmanifest",
-        "/bingo/polyfills.c420d87792b0b2f4.js",
-        "/bingo/runtime.cad3ee39a3027f66.js",
+        "/bingo/polyfills.e97199c05341c735.js",
+        "/bingo/runtime.3ac17b6bd83b5941.js",
         "/bingo/styles.ef46db3751d8e999.css"
       ],
       "patterns": []
@@ -52,11 +52,11 @@
     "/bingo/assets/icons/icon-72x72.png": "279825a1ac4377032ae996a1832c641e33ccf1b6",
     "/bingo/assets/icons/icon-96x96.png": "592885efcbfee27e5e20be4fa3043589390d2740",
     "/bingo/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/bingo/index.html": "59eab9524cd1af29d7b1dd84dc67a58284524e28",
-    "/bingo/main.eac5ed3b96d28273.js": "b6ad33ae4d54c615585aab2117a29b6a1a27c091",
+    "/bingo/index.html": "862fcd5a18edd4a7b0efad0b379f5b1650bd9e3e",
+    "/bingo/main.ffc45eb90a78d454.js": "c4a2b0add7d6ea0b97842b7ab54452432eeb6f04",
     "/bingo/manifest.webmanifest": "ccd736136bee6b35c4ebe9b5f51ee1cb91f9606a",
-    "/bingo/polyfills.c420d87792b0b2f4.js": "6587c228d5251c4b754bc08d403b1fdb45feab5f",
-    "/bingo/runtime.cad3ee39a3027f66.js": "8e91d6aea1f3ca0f49097645a8c53b0ae36276b1",
+    "/bingo/polyfills.e97199c05341c735.js": "559e4ef3a3dbf589603df44cc718930751b4f5b4",
+    "/bingo/runtime.3ac17b6bd83b5941.js": "f943841cff0e2e0190a68ce2b9a810340c29f076",
     "/bingo/styles.ef46db3751d8e999.css": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
   },
   "navigationUrls": [
