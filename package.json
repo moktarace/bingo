@@ -1,6 +1,7 @@
 {
-  "name": "bingo-des-copaings",
+  "name": "bingo",
   "version": "0.0.0",
+  "homepage": "https://moktarace.github.io/bingo",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -8,7 +9,8 @@
     "build:prod": "ng build --configuration production --base-href /bingo/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "npm run build:prod && gh-pages -d dist/bingo-des-copaings"
+    "predeploy": "npm run build:prod",
+    "deploy": "gh-pages -d dist"
   },
   "private": true,
   "dependencies": {
