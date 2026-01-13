@@ -1,0 +1,17 @@
+<div class="scratch-card">
+  <div class="card-container">
+    <div class="number-display">{{ number }}</div>
+    <canvas
+      *ngIf="!alreadyScratched"
+      #scratchCanvas
+      class="scratch-canvas"
+      (mousedown)="onMouseDown($event)"
+      (mousemove)="onMouseMove($event)"
+      (mouseup)="onMouseUp()"
+      (mouseleave)="onMouseUp()"
+      (touchstart)="onTouchStart($event)"
+      (touchmove)="onTouchMove($event)"
+      (touchend)="onTouchEnd($event)"
+    ></canvas>
+  </div>
+</div>

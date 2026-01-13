@@ -1,0 +1,12 @@
+<div class="history">
+  <h2>Historique</h2>
+  <div class="history-grid">
+    <div *ngFor="let day of history" class="history-item">
+      <div class="date">{{ formatDate(day.date) }}</div>
+      <div class="number">{{ day.number }}</div>
+    </div>
+  </div>
+  <div *ngIf="history.length === 0" class="empty-message">
+    Aucun historique disponible
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{ title }}</h1>
+  </header>
+
+  <main class="app-main">
+    <section class="today-section">
+      <h2>Aujourd'hui</h2>
+      
+      <div *ngIf="isGameNotStarted" class="game-not-started">
+        <div class="waiting-icon">⏳</div>
+        <h3>Le jeu n'a pas encore commencé</h3>
+        <p>Revenez bientôt pour découvrir le premier numéro !</p>
+      </div>
+      
+      <div *ngIf="isGameFinished && !isGameNotStarted" class="game-finished">
+        <div class="finished-icon">🎉</div>
+        <h3>Bingo Terminé !</h3>
+        <p>Tous les numéros ont été révélés.</p>
+        <p class="finished-subtitle">Merci d'avoir joué avec nous !</p>
+      </div>
+      
+      <div *ngIf="!isGameFinished && !isGameNotStarted">
+        <p *ngIf="!alreadyScratched" class="scratch-instruction">
+          ✨ Grattez avec votre souris ou votre doigt pour révéler le numéro du jour !
+        </p>
+        <app-scratch-card
+          [number]="todayNumber!"
+          [alreadyScratched]="alreadyScratched"
+          (scratched)="onScratched()"
+        ></app-scratch-card>
+      </div>
+    </section>
+
+    <section class="history-section">
+      <app-history [history]="history"></app-history>
+    </section>
+  </main>
+</div>
+
+<router-outlet></router-outlet>
